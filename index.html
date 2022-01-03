@@ -8,8 +8,36 @@
 
 <h1>calculator</h1>
 
-<div class="main">
-    <input type="text" placeholder="write your equation">
+<div class="main" onmousemove="changeShadow(event)">
+    <input type="text" placeholder="write your equation" id="input"/>
+    <div class="row">
+        <button onclick="btnClicked('+')">+</button>
+        <button onclick="btnClicked('-')">-</button>
+        <button onclick="btnClicked('/')">/</button>
+        <button onclick="btnClicked('*')">*</button>
+        <button onclick="solve()">=</button>
+    </div>
+    <div class="row">
+        <button onclick="clearInp()">C</button>
+        <button onclick="btnClicked('1')">1</button>
+        <button onclick="btnClicked('2')">2</button>
+        <button onclick="btnClicked('3')">3</button>
+        <button onclick="btnClicked('4')">4</button>
+    </div>
+    <div class="row">
+        <button onclick="btnClicked('(')">(</button>
+        <button onclick="btnClicked('5')">5</button>
+        <button onclick="btnClicked('6')">6</button>
+        <button onclick="btnClicked('7')">7</button>
+        <button onclick="btnClicked('8')">8</button>
+    </div>
+    <div class="row">
+        <button onclick="btnClicked(')')">)</button>
+        <button onclick="btnClicked('9')">9</button>
+        <button onclick="btnClicked('0')">0</button>
+        <button>--</button>
+        <button>--</button>
+    </div>
 </div>
 
 
